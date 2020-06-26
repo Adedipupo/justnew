@@ -13,6 +13,11 @@ class App extends Component {
       dietaryRestrictions: []
 
     }
+    this.handleChange = this.handleChange.bind(this)
+  }
+ 
+  handleChange() {
+    return "lolzzz";
   }
 
   render() {
