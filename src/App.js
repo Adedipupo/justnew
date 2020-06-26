@@ -16,8 +16,11 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this)
   }
  
-  handleChange() {
-    return "lolzzz";
+  handleChange(event) {
+    const{ name , value} = event.target
+    this.setState({
+      [name] : value
+    })
   }
 
   render() {
