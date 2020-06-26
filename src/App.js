@@ -34,7 +34,12 @@ class App extends Component {
             placeholder="last Name" 
           />
           <br />
-          <input placeholder="Age" /><br />
+          <input name="lastName"
+            value={this.state.lastName}
+            onChange={this.handleChange}
+            placeholder="last Name" 
+          /> 
+          <br />
 
           {/* Create radio buttons for gender here */}
           <br />
