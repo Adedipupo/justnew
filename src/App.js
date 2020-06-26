@@ -9,7 +9,9 @@ class App extends Component {
       lastName: "",
       age: 0,
       gender: "",
-      
+      destination: "",
+      dietaryRestrictions: []
+
     }
   }
 
