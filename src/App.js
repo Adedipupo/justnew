@@ -19,7 +19,12 @@ class App extends Component {
     return (
       <main>
         <form>
-          <input placeholder="First Name" /><br />
+          <input 
+            name="firstName" 
+            value={this.state.firstName} 
+            onChange={this.handleChange} 
+            placeholder="First Name" />
+          <br />
           <input placeholder="Last Name" /><br />
           <input placeholder="Age" /><br />
 
