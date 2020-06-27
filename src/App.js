@@ -73,11 +73,20 @@ class App extends Component {
               checked={this.state.gender === "female"}
               onChange={this.handleChange}
             /> Female
-                    </label>
+          </label>
 
           <br />
 
-          {/* Create select box for location here */}
+          <select
+            value={this.state.destination}
+            name="destination"
+            onChange={this.handleChange}
+          >
+            <option value="germany">Germany</option>
+            <option value="norway">Norway</option>
+            <option value="north pole">North Pole</option>
+            <option value="south pole">South Pole</option>
+          </select>
           <br />
 
           {/* Create check boxes for dietary restrictions here */}
