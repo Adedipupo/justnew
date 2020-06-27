@@ -7,7 +7,7 @@ class App extends Component {
     this.state = {
       firstName: "",
       lastName: "",
-      age: 0,
+      age: "",
       gender: "",
       destination: "",
       dietaryRestrictions: []
@@ -66,7 +66,7 @@ class App extends Component {
         </form>
         <hr />
         <h2>Entered information:</h2>
-        <p>Your name: {/* First and last name here */}</p>
+    <p>Your name: {this.state.firstName} {this.state.lastName}</p>
         <p>Your age: {/* Age here */}</p>
         <p>Your gender: {/* Gender here */}</p>
         <p>Your destination: {/* Destination here */}</p>
