@@ -10,7 +10,11 @@ class App extends Component {
       age: "",
       gender: "",
       destination: "",
-      dietaryRestrictions: []
+      dietaryRestrictions: {
+        isVegan: false,
+        isKosher: false,
+        isLactoseFree: false
+      }
 
     }
     this.handleChange = this.handleChange.bind(this)
@@ -107,8 +111,16 @@ class App extends Component {
               onChange={this.handleChange}
               checked={this.state.dietaryRestrictions.isKosher}
             /> Kosher?
-                    </label>
+          </label>
           <br />
+          <label>
+            <input
+              type="checkbox"
+              name="isLactoseFree"
+              onChange={this.handleChange}
+              checked={this.state.dietaryRestrictions.isLactoseFree}
+            /> Lactose Free?
+          </label>
 
           <br />
 
