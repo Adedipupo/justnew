@@ -100,6 +100,16 @@ class App extends Component {
                     </label>
           <br />
 
+          <label>
+            <input
+              type="checkbox"
+              name="isKosher"
+              onChange={this.handleChange}
+              checked={this.state.dietaryRestrictions.isKosher}
+            /> Kosher?
+                    </label>
+          <br />
+
           <br />
 
           <button>Submit</button>
