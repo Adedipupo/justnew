@@ -99,7 +99,7 @@ class App extends Component {
         <p>Your name: {this.state.firstName} {this.state.lastName}</p>
         <p>Your age: {/* Age here */}</p>
         <p>Your gender: {this.state.gender}</p>
-        <p>Your destination: {/* Destination here */}</p>
+    <p>Your destination: {this.state.destination}</p>
         <p>
           Your dietary restrictions:
                     {/* Dietary restrictions here, comma separated */}
