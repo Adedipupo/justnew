@@ -82,6 +82,7 @@ class App extends Component {
             name="destination"
             onChange={this.handleChange}
           >
+            <option value="">-- Please Choose a destination --</option>
             <option value="germany">Germany</option>
             <option value="norway">Norway</option>
             <option value="north pole">North Pole</option>
@@ -89,7 +90,16 @@ class App extends Component {
           </select>
           <br />
 
-          {/* Create check boxes for dietary restrictions here */}
+          <label>
+            <input
+              type="checkbox"
+              name="isVegan"
+              onChange={this.handleChange}
+              checked={this.state.dietaryRestrictions.isVegan}
+            /> Vegan?
+                    </label>
+          <br />
+
           <br />
 
           <button>Submit</button>
@@ -99,7 +109,7 @@ class App extends Component {
         <p>Your name: {this.state.firstName} {this.state.lastName}</p>
         <p>Your age: {/* Age here */}</p>
         <p>Your gender: {this.state.gender}</p>
-    <p>Your destination: {this.state.destination}</p>
+        <p>Your destination: {this.state.destination}</p>
         <p>
           Your dietary restrictions:
                     {/* Dietary restrictions here, comma separated */}
