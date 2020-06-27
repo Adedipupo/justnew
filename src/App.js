@@ -64,6 +64,18 @@ class App extends Component {
           </label>
 
           <br />
+           
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              checked={this.state.gender === "female"}
+              onChange={this.handleChange}
+            /> Female
+                    </label>
+
+          <br />
 
           {/* Create select box for location here */}
           <br />
